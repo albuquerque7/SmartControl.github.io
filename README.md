@@ -1,2 +1,2 @@
-# SmartControl.github.io
+# SmartControl
 Cadastre-se no SmartControl sc
