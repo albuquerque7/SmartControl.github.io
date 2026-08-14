@@ -222,5 +222,28 @@ body{
    transform: scale(1.03);
 }
 
+@media (max-width: 768px){
+   main{
+      flex-direction: column;
+   }
+
+   .cab, .campos{
+      width: 100%;
+   }
+
+   .rodape{
+      flex-direction: column;
+      gap: 8px
+   }
+
+   #email_legend, #email{
+      margin: 8px
+   }
+
+   #senha_legend, #senha{
+      margin: 8px
+   }
+}
+
 
 
