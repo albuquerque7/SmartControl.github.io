@@ -10,6 +10,10 @@
 }
 
 body{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100dvh;
    background: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
    font-family: "Oswald", sans-serif;
    font-optical-sizing: auto;
@@ -31,19 +35,21 @@ nav{
 }
 
 #titulo_1{
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 
 
 .selecao{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     margin-top: 2%;
     margin-bottom: 2%;
     color: #ffc700;
     font-family: "Oswald", sans-serif;
+    gap: 10px;
 }
 
 .caixa_monitoramento{
@@ -58,7 +64,8 @@ nav{
 }
 
 .caixa_cpl, .caixa_monitoramento{
-    width: 50%px;
+    width: 100%;
+    max-width: 500px;
     height: 550px;
     display: flex;
     flex-direction: row;
@@ -66,17 +73,18 @@ nav{
     justify-content: space-around;
     border:2px solid #ffc800c4;
     border-radius: 30px;
+    flex-wrap: wrap;
 
 }
 
 #monitoramento{
     color: #ffc700;
-    font-size: 25px;
+    font-size: 2rem;
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     background-color: hsla(0, 0%, 0%, 0.5);
     padding: 12px;
-    width: 500px;
+    width: 100%;
 }
 
 .caixa_cpl{
@@ -92,12 +100,12 @@ nav{
 
 #cpl{
     color: #ffc700;
-    font-size: 25px;
+    font-size: 2rem;
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     background-color: hsla(0, 0%, 0%, 0.5);
     padding: 12px;
-    width: 500px;
+    width: 100%;
 }
 
 footer{
@@ -139,5 +147,34 @@ footer ul{
     color: #ffc700;
     background:linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%); 
     margin-top: 5%;
+}
 
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+        }
+
+        .header{
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center !important;
+        }
+
+        #selecao{
+            flex-wrap: wrap;
+        }
+
+        .header, #titulo_1{
+            font-size: 1.5rem;
+        }
+
+        #monitoramento, #cpl{
+            font-size: 1rem;
+        }
+
+        .caixa_cpl, .caixa_monitoramento{
+            width: 90%;
+        }
 }

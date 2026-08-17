@@ -26,6 +26,7 @@ body{
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   text-align: center;
    align-items: center;
 }
 
@@ -64,6 +65,7 @@ body{
    align-items: center;
    width: 50%;
    gap: 20px;
+   justify-content: center;
 }
 
 #email_legend{
@@ -78,7 +80,7 @@ body{
    border: solid 2px #ffc700;
    border-radius: 9px;
    padding: 15px;
-   width: 105%;
+   width: 100%;
    margin-bottom: 30px;
    margin-top: 10px;
    transition: 0.3s ease-in-out;
@@ -100,7 +102,7 @@ body{
    border: solid 2px #ffc700;
    border-radius:9px;
    padding: 15px;
-   width: 105%;
+   width: 100%;
    margin-bottom: 30px;
    margin-top: 10px;
    transition: 0.3s ease-in-out;
@@ -228,7 +230,7 @@ body{
    }
 
    .cab, .campos{
-      width: 100%;
+      width: 100% !important;
    }
 
    .rodape{
@@ -236,12 +238,8 @@ body{
       gap: 8px
    }
 
-   #email_legend, #email{
-      margin: 8px
-   }
-
-   #senha_legend, #senha{
-      margin: 8px
+   .campos form {
+      padding: 8px;
    }
 }
 
