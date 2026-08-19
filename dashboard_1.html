@@ -1,43 +1,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoração de eficiência geral - Dashboard</title>
     <link rel="icon" href="assets/images/unnamed.png">
     <link rel="stylesheet" href="assets/css/graficos_monitoramento.css">
-</head>
-<body>
+    <title>Monitoramento</title>
+  </head>
+  <body>
     <header>
-        <a href="dashboard.html">Voltar</a>
-        <h1>Monitoração de Eficiência Geral</h1>
+        <nav>
+            <a href="dashboard.html">Voltar</a>
+            <h1>Monitoração de eficiência geral</h1>
+            <ul>
+                <li>Início</li>
+                <li>Configurações</li>
+                <li>Perfil</li>
+            </ul>
+        </nav>
     </header>
-
-    <div class="grafico_barras">
-        <div class="titulo_1">
-            <h1 id="perf">Performance e disponibilidade</h1>
-
+    <main class="container">
+        <div class="caixas">
+            <div class="caixa_1">
+                <h1 class="PeD">Performance e disponibilidade</h1>
+                <div>
+                    <ul>
+                        <li><span class="dot_1"></span></li> <h1>Máquinas</h1>
+                        <li><span class="dot_2"></span></li> <h2>Manufatura</h2>
+                    </ul>
+                    <div class="barras">
+                        <div class="estatisticas_1">
+                            <div class="colunas_1">
+                                    <div class="coluna1">67</div>
+                                    <div class="coluna2">33</div>
+                            </div>
+                        </div>
+                        <div class="estatisticas_2">
+                            <div class="colunas_2">
+                                <div class="coluna3">72</div>
+                                <div class="coluna4">28</div>
+                            </div>
+                        </div>
+                        <div class="estatisticas_3">
+                            <div class="colunas_3">
+                                <div class="coluna5">52</div>
+                                <div class="coluna6">48</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caixa_2">
+                <h2>Ciclo de proddução (tempo)</h2>
+                <div>
+                    <ul>
+                        <li><span class="dot_1"></span></li> <h1>Máquinas</h1>
+                        <li><span class="dot_2"></span></li> <h2>Manufatura</h2>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="legendas_grafico_barras">
-        <h1>Máquinas</h1>
-        <h2>Manufatura</h2>
-    </div>
-
-    <div class="grafico_pizza">
-        <div class="titulo_2">
-            <h1 id="cp">Ciclo de produção (tempo)</h1>
-        </div>
-    </div>
-
-    <div class="legendas_cp">
-        <h1>Máquinas</h1>
-        <h2>Manufatura</h2>
-    </div>
-    
-</body>
-</html>
+    </main>
+  </body>
+  </html>
